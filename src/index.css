@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.preview-content table {
+  @apply w-full border-collapse border border-gray-300;
+}
+
+.preview-content th,
+.preview-content td {
+  @apply border border-gray-300 p-2 text-sm;
+}
+
+.preview-content th {
+  @apply bg-gray-50 font-semibold text-gray-700;
+}
+
+.preview-content tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.preview-content tr:hover {
+  @apply bg-blue-50;
+}
+
+@media print {
+  .preview-content {
+    page-break-after: always;
+  }
+}
